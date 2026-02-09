@@ -518,15 +518,19 @@ html {
     @include container;
     display: grid;
     grid-template-columns: 1.2fr 0.8fr;
-    gap: 2rem;
+    gap: 2.75rem;
     align-items: start;
   }
 
   .physician-half {
     @include card;
-    padding: 2rem;
+    padding: 2.25rem 2.5rem;
     background: #fff;
     border-radius: $radius;
+
+    h3 {
+      margin-bottom: 1.5rem;
+    }
   }
 
   h3 {
@@ -538,25 +542,28 @@ html {
   .physician-info {
     display: grid;
     grid-template-columns: 180px 1fr;
-    gap: 1.5rem;
+    gap: 2rem;
     align-items: start;
   }
 
   .physician-img-container {
-    border: 1px dashed rgba(15, 23, 42, 0.25);
     border-radius: $radius-sm;
-    background: rgba(15, 23, 42, 0.02);
-    min-height: 180px;
+    overflow: hidden;
+    border: 1px solid rgba(15, 23, 42, 0.10);
+    background: rgba(255, 255, 255, 0.6);
+
+    width: 180px;
+    height: 180px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
-    h1 {
-      font-size: 0.85rem;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: $subtle;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; // important: makes headshots look right
+      display: block;
     }
   }
 
@@ -579,8 +586,80 @@ html {
 
     p {
       color: $muted;
-      line-height: 1.7;
+      line-height: 1.75;
+      margin-top: .5rem;
       font-size: 0.98rem;
+    }
+  }
+
+  .credentials-card {
+    text-transform: capitalize;
+
+    .cred-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+    }
+
+    .cred-item {
+      padding: 0.9rem 1rem;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: $radius-sm;
+      background: rgba(255, 255, 255, 0.65);
+    }
+
+    .cred-top {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 1rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .cred-title {
+      font-size: 1rem;
+      font-weight: 700;
+      color: $muted;
+      margin-bottom: 0.5rem;
+    }
+
+    .cred-type {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: $muted;
+      padding: 0.2rem 0.55rem;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.10);
+      background: rgba(42, 91, 215, 0.06);
+    }
+
+    .cred-org {
+      color: $ink;
+      opacity: 0.9;
+      margin-bottom: 0.15rem;
+      text-transform: capitalize;
+    }
+
+    .cred-meta {
+      display: flex;
+      flex-wrap: wrap;
+      color: $muted;
+      font-size: 0.92rem;
+      line-height: 1.4;
+      gap: 1rem;
+    }
+    .cred-block {
+      margin-bottom: 2rem;
+
+      h4 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
     }
   }
 }

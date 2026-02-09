@@ -64,7 +64,41 @@
       "specialty": "Internal Medicine",
       "bio": "Dr. Jason Smuckler is a dedicated Internal Medicine specialist committed to advancing inpatient care standards in Southern Nevada. With a focus on evidence-based medicine and multidisciplinary collaboration, he specializes in managing complex medical cases within acute care environments. Dr. Smuckler’s approach prioritizes clinical precision, patient safety, and seamless coordination with hospital leadership to ensure optimal recovery outcomes."
     },
-    "credentialsPlaceholder": "Credentials Go Here"
+    "credentials": {
+      "experience": [
+        {
+          "title": "Hospitalist",
+          "org": "Platinum Hospitalists LLP",
+          "type": "Contract",
+          "dates": "May 2023 – Present",
+          "location": "Las Vegas, Nevada",
+          "notes": ""
+        },
+        {
+          "title": "Resident Physician",
+          "org": "Valley Hospital Medical Center, Inc.",
+          "type": "Full-time",
+          "dates": "Apr 2024",
+          "location": "Las Vegas, Nevada",
+          "notes": ""
+        },
+        {
+          "title": "Resident Physician",
+          "org": "The Valley Health System",
+          "type": "Full-time",
+          "dates": "Jul 2019 – Jun 2020",
+          "location": "Las Vegas, Nevada",
+          "notes": ""
+        }
+      ],
+      "education": [
+        {
+          "school": "Touro College of Osteopathic Medicine",
+          "degree": "DO, Doctor of Osteopathic Medicine",
+          "dates": "May 2015 – Jun 2019"
+        }
+      ]
+    }
   },
 
   "contact": {
