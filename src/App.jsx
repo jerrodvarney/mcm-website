@@ -1,12 +1,12 @@
 import content from '@/content/siteContent.json';
 import { useEffect, useState } from 'react';
-import { FaArrowAltCircleUp } from 'react-icons/fa';
+import { FaChevronUp } from 'react-icons/fa';
 import Contact from './sections/Contact';
 import Hero from './sections/Hero';
 import Physicians from './sections/Physicians';
 import Services from './sections/Services';
 
-import './App.css';
+import './App.scss';
 import Footer from './components/Footer';
 
 function App() {
@@ -45,7 +45,7 @@ function App() {
         type="button"
         onClick={scrollToTop}
       >
-        <FaArrowAltCircleUp size="2rem" />
+        <FaChevronUp size="2rem" />
       </button>
 
       <Footer footer={content.footer} />

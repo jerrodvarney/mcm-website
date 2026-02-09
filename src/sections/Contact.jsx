@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaEnvelope } from 'react-icons/fa';
 
 export default function Contact({ contact }) {
   const [formData, setFormData] = useState({
@@ -26,7 +27,7 @@ export default function Contact({ contact }) {
   };
 
   return (
-    <section id="contact">
+    <section id="contact" className="section-container">
       <div id="contact-content">
         <div className="contact-headline">
           <h3>{contact.headline}</h3>
@@ -39,12 +40,16 @@ export default function Contact({ contact }) {
         </div>
 
         <div className="contact-direct">
-          <p>
-            <strong>
+          <p className="email-row">
+            <span className="email-icon">
+              <FaEnvelope />
+            </span>
+
+            <strong className="email-label">
               {contact.directEmail.label}
               :
             </strong>
-            {' '}
+
             <a href={`mailto:${contact.directEmail.value}`}>
               {contact.directEmail.value}
             </a>

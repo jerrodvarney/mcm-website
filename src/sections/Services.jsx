@@ -2,7 +2,7 @@ import ServiceCard from '@/components/ServiceCard';
 
 export default function Services({ services }) {
   return (
-    <section id="services">
+    <section id="services" className="section-container">
       <div id="services-content">
         <div className="service-info">
           <h3>{services.headline}</h3>

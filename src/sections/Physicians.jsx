@@ -1,6 +1,6 @@
 export default function Physicians({ physicians }) {
   return (
-    <section id="physicians">
+    <section id="physicians" className="section-container">
       <div id="physicians-content">
         <div className="physician-half">
           <h3>{physicians.headlineLeft}</h3>

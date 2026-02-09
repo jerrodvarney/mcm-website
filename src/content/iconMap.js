@@ -1,7 +1,7 @@
-import { FaClipboardCheck, FaHospital, FaStethoscope } from 'react-icons/fa';
+import { FaClipboardList, FaHospitalAlt, FaUserMd } from 'react-icons/fa';
 
 export const iconMap = {
-  stethoscope: FaStethoscope,
-  hospital: FaHospital,
-  clipboard: FaClipboardCheck,
+  stethoscope: FaUserMd,
+  hospital: FaHospitalAlt,
+  clipboard: FaClipboardList,
 };

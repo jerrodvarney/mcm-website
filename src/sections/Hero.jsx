@@ -1,5 +1,5 @@
 import Nav from '@/components/Nav';
-import { FaLongArrowAltRight } from 'react-icons/fa';
+import { FaArrowRight } from 'react-icons/fa';
 
 export default function Hero({ hero, nav, brand }) {
   const scrollTo = (id) => {
@@ -10,7 +10,7 @@ export default function Hero({ hero, nav, brand }) {
   };
 
   return (
-    <section id="hero">
+    <section id="hero" className="section-container">
       <Nav nav={nav} brand={brand} />
 
       <div id="hero-content">
@@ -36,7 +36,7 @@ export default function Hero({ hero, nav, brand }) {
             onClick={() => scrollTo(hero.ctaSecondary.targetId)}
           >
             {hero.ctaSecondary.label}
-            <FaLongArrowAltRight size="2rem" />
+            <FaArrowRight size="2rem" />
           </button>
         </div>
       </div>
