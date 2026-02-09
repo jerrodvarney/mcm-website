@@ -18,10 +18,9 @@
 
   "hero": {
     "headline": "Mountain Crest Medical, Inc.",
-    "subheadline": "Hospital-Based Internal Medicine Physician Services in Southern Nevada",
+    "subheadline": "Expert Hospitalist & Internal Medicine Services in Southern Nevada",
     "paragraphs": [
-      "Mountain Crest Medical, Inc. provides internal medicine physician services through hospital-based contracts in Southern Nevada. Our practice focuses on inpatient medical care, clinical collaboration, and evidence-based management of complex medical conditions within acute care settings.",
-      "We work closely with hospital leadership, clinical staff, and multidisciplinary teams to support high-quality, compliant, and patient-centered care delivery."
+      "Mountain Crest Medical, Inc. provides dedicated inpatient care through specialized hospital-based contracts. We partner with facility leadership to deliver evidence-based management of complex medical conditions."
     ],
     "ctaPrimary": {
       "label": "Request Information",
@@ -35,25 +34,25 @@
 
   "services": {
     "headline": "Professional Services",
-    "intro": "Mountain Crest Medical, Inc. delivers internal medicine physician services exclusively within hospital and contracted clinical environments.",
+    "intro": "Providing specialized internal medicine and hospitalist staffing solutions designed to integrate seamlessly into acute care environments.",
     "cards": [
       {
         "iconKey": "stethoscope",
-        "title": "Inpatient Internal Medicine",
-        "info": "Comprehensive inpatient medical evaluation and management for adult patients within acute care hospital settings, with a focus on evidence-based clinical decision-making and continuity of care."
+        "title": "Acute Care Excellence",
+        "info": "Focused inpatient evaluation and management for adult populations. We prioritize evidence-based clinical decision-making to ensure continuity of care and improved patient outcomes."
       },
       {
         "iconKey": "hospital",
-        "title": "Hospitalist Coverage",
-        "info": "Reliable hospitalist coverage supporting day, night, and weekend staffing needs. Our physicians integrate seamlessly with hospital teams to promote efficient care delivery and patient safety."
+        "title": "24/7 Staffing Solutions",
+        "info": "Reliable, round-the-clock hospitalist coverage. Our physicians integrate with your existing teams to drive operational efficiency and maintain the highest standards of patient safety."
       },
       {
         "iconKey": "clipboard",
-        "title": "Clinical Medical Services",
-        "info": "Clinical medical services provided in accordance with hospital policies, credentialing requirements, and applicable regulatory standards, supporting high-quality inpatient care operations."
+        "title": "Regulatory & Clinical Rigor",
+        "info": "Comprehensive medical services delivered with strict adherence to hospital policies, credentialing, and regulatory standards to support 24/7 inpatient operations."
       }
     ],
-    "disclaimer": "Mountain Crest Medical, Inc. provides physician services exclusively within hospital or contracted clinical settings. All services are delivered in accordance with hospital policies and applicable regulatory standards."
+    "disclaimer": "Mountain Crest Medical, Inc. is committed to clinical excellence and full regulatory compliance across all contracted facilities."
   },
 
   "physicians": {
@@ -61,16 +60,16 @@
     "headlineRight": "Credentials",
     "placeholderImageText": "IMG PLACEHOLDER",
     "physician": {
-      "name": "Dr. Jason Smuckler, MD",
+      "name": "Dr. Jason Smuckler, DO | Internal Medicine",
       "specialty": "Internal Medicine",
-      "bio": "Dr. Smuckler practices internal medicine within hospital-based settings, providing comprehensive inpatient medical care and collaborating closely with multidisciplinary healthcare teams. His clinical focus includes the evaluation and management of complex medical conditions in acute care environments, with an emphasis on evidence-based practice and coordinated care."
+      "bio": "Dr. Jason Smuckler is a dedicated Internal Medicine specialist committed to advancing inpatient care standards in Southern Nevada. With a focus on evidence-based medicine and multidisciplinary collaboration, he specializes in managing complex medical cases within acute care environments. Dr. Smuckler’s approach prioritizes clinical precision, patient safety, and seamless coordination with hospital leadership to ensure optimal recovery outcomes."
     },
     "credentialsPlaceholder": "Credentials Go Here"
   },
 
   "contact": {
-    "headline": "Contact Our Team",
-    "intro": "For professional and administrative inquiries regarding hospital-based physician services, please contact Mountain Crest Medical, Inc. using the form below.",
+    "headline": "Contact Our Administrative Team",
+    "intro": "We specialize in hospital-based physician services and clinical collaboration. For coverage inquiries or professional partnership opportunities, please complete the form below.",
     "noticeTitle": "Important Notice",
     "noticeBody": "This contact form is intended for professional and administrative inquiries only. We do not provide medical advice, diagnosis, or treatment through this website. Patients seeking medical care should contact their healthcare provider directly.",
     "submitLabel": "Send Message",

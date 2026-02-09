@@ -3,9 +3,17 @@ import { FaArrowRight } from 'react-icons/fa';
 
 export default function Hero({ hero, nav }) {
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({
+    const el = document.getElementById(id);
+
+    if (!el) return;
+
+    const y = el.getBoundingClientRect().top
+    + window.pageYOffset
+    - 100; // nav height
+
+    window.scrollTo({
+      top: y,
       behavior: 'smooth',
-      block: 'start',
     });
   };
 
@@ -14,8 +22,7 @@ export default function Hero({ hero, nav }) {
       <Nav nav={nav} />
 
       <div id="hero-content">
-        <h1>{hero.headline}</h1>
-        <h2>{hero.subheadline}</h2>
+        <h1>{hero.subheadline}</h1>
 
         {hero.paragraphs.map((txt) => (
           <p key={txt}>{txt}</p>
@@ -36,7 +43,7 @@ export default function Hero({ hero, nav }) {
             onClick={() => scrollTo(hero.ctaSecondary.targetId)}
           >
             {hero.ctaSecondary.label}
-            <FaArrowRight size="2rem" />
+            <FaArrowRight size="1.25rem" />
           </button>
         </div>
       </div>
