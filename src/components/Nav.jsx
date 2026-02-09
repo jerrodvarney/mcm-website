@@ -1,24 +1,18 @@
-export default function Nav({ nav, brand }) {
+import logo from '@/assets/mcm-logo.png';
+
+export default function Nav({ nav }) {
   const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-
-    const y = el.getBoundingClientRect().top
-    + window.pageYOffset
-    - window.innerHeight / 2
-    + el.offsetHeight / 2;
-
-    window.scrollTo({
-      top: y,
+    document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
+      block: 'start',
     });
   };
 
   return (
     <nav id="nav">
-      <h2>
-        {brand.logoText}
-      </h2>
+      <div className="nav-logo">
+        <img src={logo} alt="Mountain Crest Medical, Inc." />
+      </div>
 
       <div id="nav-menu">
         {nav.items.map((item) => (

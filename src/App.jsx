@@ -34,7 +34,7 @@ function App() {
 
   return (
     <main id="app">
-      <Hero hero={content.hero} nav={content.nav} brand={content.brand} />
+      <Hero hero={content.hero} nav={content.nav} />
       <Services services={content.services} />
       <Physicians physicians={content.physicians} />
       <Contact contact={content.contact} brand={content.brand} />

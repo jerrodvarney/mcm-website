@@ -154,6 +154,17 @@ section {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid rgba(15, 23, 42, 0.08);
 
+  .nav-logo {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 70px;
+      width: auto;
+      object-fit: contain;
+    }
+  }
+
   #nav-menu {
     display: flex;
     align-items: center;

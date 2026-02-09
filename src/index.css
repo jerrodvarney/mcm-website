@@ -52,3 +52,6 @@ table {
 }
 
 /* AFTER RESET */
+body {
+	background-color: gray;
+}

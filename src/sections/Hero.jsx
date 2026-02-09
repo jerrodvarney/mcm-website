@@ -1,25 +1,17 @@
 import Nav from '@/components/Nav';
 import { FaArrowRight } from 'react-icons/fa';
 
-export default function Hero({ hero, nav, brand }) {
+export default function Hero({ hero, nav }) {
   const scrollTo = (id) => {
-    const el = document.getElementById(id);
-    if (!el) return;
-
-    const y = el.getBoundingClientRect().top
-    + window.pageYOffset
-    - window.innerHeight / 2
-    + el.offsetHeight / 2;
-
-    window.scrollTo({
-      top: y,
+    document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
+      block: 'start',
     });
   };
 
   return (
     <section id="hero" className="section-container">
-      <Nav nav={nav} brand={brand} />
+      <Nav nav={nav} />
 
       <div id="hero-content">
         <h1>{hero.headline}</h1>
