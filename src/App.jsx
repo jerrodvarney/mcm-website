@@ -1,3 +1,4 @@
+import content from '@/content/siteContent.json';
 import { useEffect, useState } from 'react';
 import { FaArrowAltCircleUp } from 'react-icons/fa';
 import Contact from './sections/Contact';
@@ -6,6 +7,7 @@ import Physicians from './sections/Physicians';
 import Services from './sections/Services';
 
 import './App.css';
+import Footer from './components/Footer';
 
 function App() {
   // STATE
@@ -32,15 +34,21 @@ function App() {
 
   return (
     <main id="app">
-      <Hero />
-      <Services />
-      <Physicians />
-      <Contact />
-      {belowHero && (
-      <button id="scroll-to-top" type="button" onClick={scrollToTop}>
+      <Hero hero={content.hero} nav={content.nav} brand={content.brand} />
+      <Services services={content.services} />
+      <Physicians physicians={content.physicians} />
+      <Contact contact={content.contact} brand={content.brand} />
+
+      <button
+        id="scroll-to-top"
+        className={belowHero ? 'show' : ''}
+        type="button"
+        onClick={scrollToTop}
+      >
         <FaArrowAltCircleUp size="2rem" />
       </button>
-      )}
+
+      <Footer footer={content.footer} />
     </main>
   );
 }

@@ -1,0 +1,105 @@
+{
+  "brand": {
+    "companyName": "Mountain Crest Medical, Inc.",
+    "logoText": "Mountain Crest Medical, Inc."
+  },
+
+  "nav": {
+    "items": [
+      { "label": "Services", "targetId": "services" },
+      { "label": "Physicians", "targetId": "physicians" },
+      { "label": "Contact", "targetId": "contact" }
+    ]
+  },
+
+  "footer": {
+    "disclaimer": "This website is intended for informational purposes only."
+  },
+
+  "hero": {
+    "headline": "Mountain Crest Medical, Inc.",
+    "subheadline": "Hospital-Based Internal Medicine Physician Services in Southern Nevada",
+    "paragraphs": [
+      "Mountain Crest Medical, Inc. provides internal medicine physician services through hospital-based contracts in Southern Nevada. Our practice focuses on inpatient medical care, clinical collaboration, and evidence-based management of complex medical conditions within acute care settings.",
+      "We work closely with hospital leadership, clinical staff, and multidisciplinary teams to support high-quality, compliant, and patient-centered care delivery."
+    ],
+    "ctaPrimary": {
+      "label": "Request Information",
+      "targetId": "contact"
+    },
+    "ctaSecondary": {
+      "label": "Learn More",
+      "targetId": "services"
+    }
+  },
+
+  "services": {
+    "headline": "Professional Services",
+    "intro": "Mountain Crest Medical, Inc. delivers internal medicine physician services exclusively within hospital and contracted clinical environments.",
+    "cards": [
+      {
+        "iconKey": "stethoscope",
+        "title": "Inpatient Internal Medicine",
+        "info": "Comprehensive inpatient medical evaluation and management for adult patients within acute care hospital settings, with a focus on evidence-based clinical decision-making and continuity of care."
+      },
+      {
+        "iconKey": "hospital",
+        "title": "Hospitalist Coverage",
+        "info": "Reliable hospitalist coverage supporting day, night, and weekend staffing needs. Our physicians integrate seamlessly with hospital teams to promote efficient care delivery and patient safety."
+      },
+      {
+        "iconKey": "clipboard",
+        "title": "Clinical Medical Services",
+        "info": "Clinical medical services provided in accordance with hospital policies, credentialing requirements, and applicable regulatory standards, supporting high-quality inpatient care operations."
+      }
+    ],
+    "disclaimer": "Mountain Crest Medical, Inc. provides physician services exclusively within hospital or contracted clinical settings. All services are delivered in accordance with hospital policies and applicable regulatory standards."
+  },
+
+  "physicians": {
+    "headlineLeft": "About Our Physician",
+    "headlineRight": "Credentials",
+    "placeholderImageText": "IMG PLACEHOLDER",
+    "physician": {
+      "name": "Dr. Jason Smuckler, MD",
+      "specialty": "Internal Medicine",
+      "bio": "Dr. Smuckler practices internal medicine within hospital-based settings, providing comprehensive inpatient medical care and collaborating closely with multidisciplinary healthcare teams. His clinical focus includes the evaluation and management of complex medical conditions in acute care environments, with an emphasis on evidence-based practice and coordinated care."
+    },
+    "credentialsPlaceholder": "Credentials Go Here"
+  },
+
+  "contact": {
+    "headline": "Contact Our Team",
+    "intro": "For professional and administrative inquiries regarding hospital-based physician services, please contact Mountain Crest Medical, Inc. using the information below.",
+    "noticeTitle": "Important Notice",
+    "noticeBody": "This contact form is intended for professional and administrative inquiries only. We do not provide medical advice, diagnosis, or treatment through this website. Patients seeking medical care should contact their healthcare provider directly.",
+    "submitLabel": "Send Message",
+    "note": "All inquiries are confidential. We typically respond within one business day.",
+    "fields": {
+      "name": {
+        "label": "Full Name*",
+        "placeholder": "First Last"
+      },
+      "organization": {
+        "label": "Hospital / Organization*",
+        "placeholder": "Organization Name"
+      },
+      "email": {
+        "label": "Work Email*",
+        "placeholder": "name@hospital.org"
+      },
+      "phone": {
+        "label": "Phone",
+        "placeholder": "(702) 123-4567"
+      },
+      "message": {
+        "label": "Message*",
+        "placeholder": "Tell us about your coverage needs..."
+      }
+    },
+    "directEmail": {
+      "label": "Email",
+      "value": "admin@mountaincrestmedical.com"
+    }
+  }
+}

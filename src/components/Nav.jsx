@@ -1,4 +1,4 @@
-export default function Nav() {
+export default function Nav({ nav, brand }) {
   const scrollTo = (id) => {
     document.getElementById(id)?.scrollIntoView({
       behavior: 'smooth',
@@ -8,11 +8,20 @@ export default function Nav() {
 
   return (
     <nav id="nav">
-      <a href="hero">LOGO GOES HERE</a>
+      <h2>
+        {brand.logoText}
+      </h2>
+
       <div id="nav-menu">
-        <button type="button" onClick={() => scrollTo('services')}>Services</button>
-        <button type="button" onClick={() => scrollTo('physicians')}>Physicians</button>
-        <button type="button" onClick={() => scrollTo('contact')}>Contact</button>
+        {nav.items.map((item) => (
+          <button
+            key={item.targetId}
+            type="button"
+            onClick={() => scrollTo(item.targetId)}
+          >
+            {item.label}
+          </button>
+        ))}
       </div>
     </nav>
   );
