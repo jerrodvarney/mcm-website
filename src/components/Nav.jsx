@@ -1,8 +1,16 @@
 export default function Nav({ nav, brand }) {
   const scrollTo = (id) => {
-    document.getElementById(id)?.scrollIntoView({
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const y = el.getBoundingClientRect().top
+    + window.pageYOffset
+    - window.innerHeight / 2
+    + el.offsetHeight / 2;
+
+    window.scrollTo({
+      top: y,
       behavior: 'smooth',
-      block: 'start',
     });
   };
 

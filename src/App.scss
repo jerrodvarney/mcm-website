@@ -78,7 +78,7 @@ $section-max-width: 1700px;
 }
 
 @mixin card {
-  border: 1px solid $border;
+  border: 1px solid white;
   border-radius: $radius;
   background: $panel;
   box-shadow: $shadow;
@@ -198,12 +198,28 @@ section {
 #hero {
   position: relative;
   min-height: 90vh;
-  padding: 6.5rem 3rem 3rem; // extra top padding for nav overlay
+  padding: 6.5rem 3rem 3rem;
   display: flex;
   align-items: center;
   justify-content: center;
 
-   background: $panel;
+  background: url("/hero-bg.jpg") center / cover no-repeat;
+
+  // overlay for readability
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.7)
+    );
+
+    backdrop-filter: blur(2px);
+    z-index: 1;
+  }
 
   #hero-content {
     @include container;
@@ -211,9 +227,12 @@ section {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    position: relative;
+    z-index: 2;
 
     h1 {
       font-size: clamp(2.2rem, 4vw, 3.4rem);
+      font-weight: bold;
       line-height: 1.05;
       letter-spacing: -0.03em;
     }
